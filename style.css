@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 320px;
+  background-color: #1a1c22;
+  color: white;
+}
+.header-msg {
+  background-color: #252830;
+}
+.msg-third {
+  border-radius: 1em; background-color: #3f434d;
+}
+.msg-first {
+  border-radius: 1em; background-color: #103a96;
+}
+.profile {
+  border-radius: 10%;
+}
