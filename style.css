@@ -14,21 +14,45 @@
 .msg-window {
   font-family: Roboto, sans-serif;
   width: 350px;
-  min-height: 500px;
+  min-height: 600px;
   background-color: #1a1c22;
   color: white;
   padding-bottom: 10px;
-}
-.msg-footer {
-  background-color: #252830;
-  height: 40px;
-  margin-top: auto;
+  position: relative;
 }
 .header-msg {
   background-color: #252830;
   padding-top: .6em;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.msg-footer {
+  background-color: #252830;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+.msg-footer-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  align-content: center;
+  width: 100%;
+  border-radius: 1em;
+  background-color: #3f434d;
+  color: #b5b5b5;
+}
+.msg-footer-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-content: center;
 }
 .msg-third {
   width: fit-content;
