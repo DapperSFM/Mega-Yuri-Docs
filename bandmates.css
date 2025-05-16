@@ -3,29 +3,29 @@
   height: 15px;
   display: flex;
   font-size: 10px;
-  margin-left: 10px;
+  padding-left: 10px;
   font-family: Roboto, sans-serif;
+  position: sticky;
+  top: 0;
 }
 .top-icons {
   margin-right: 2px;
   margin-left: auto;
   height: 10px;
-}
-
-body {
-  overflow: hidden;
+  position: inherit;
 }
 
 /* msg css */
 
 .msg-window {
   font-family: Roboto, sans-serif;
+  margin-top: 10px;
   width: 350px;
   height: 600px;
   overflow-y: auto;
+  overflow-x: hidden;
   background-color: #1a1c22;
   color: white;
-  padding-bottom: 10px;
   position: relative;
 }
 .header-msg {
@@ -34,17 +34,50 @@ body {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  position: sticky;
+  top: 15px;
+  overflow-x: inherit;
+ scrollbar-gutter: inherit;
+}
+.msg-header-content {
+  margin-bottom: 10px;
+  align-content: center;
+  max-height: 20px;
+}
+.msg-header-text {
+  margin-bottom: 10px;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
 }
 .msg-footer {
   background-color: #252830;
   height: 50px;
+  margin-top: auto;
   align-content: center;
   display: flex;
   justify-content: space-around;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 20px;
   width: 100%;
+  overflow-x: inherit;
+  position: absolute;
+  bottom: 0;
+}
+.msg-footer-sticky {
+  background-color: #252830;
+  height: 50px;
+  margin-top: auto;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  overflow-x: inherit;
 }
 .msg-footer-text {
   margin-top: 10px;
@@ -60,6 +93,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   align-content: center;
+  max-height: 30px;
 }
 .msg-third {
   width: fit-content;
