@@ -12,12 +12,17 @@
   height: 10px;
 }
 
+body {
+  overflow: hidden;
+}
+
 /* msg css */
 
 .msg-window {
   font-family: Roboto, sans-serif;
   width: 350px;
-  min-height: 600px;
+  height: 600px;
+  overflow-y: auto;
   background-color: #1a1c22;
   color: white;
   padding-bottom: 10px;
@@ -33,13 +38,12 @@
 .msg-footer {
   background-color: #252830;
   height: 50px;
-  position: absolute;
-  bottom: 0;
   align-content: center;
   display: flex;
   justify-content: space-around;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 20px;
   width: 100%;
 }
 .msg-footer-text {
