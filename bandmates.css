@@ -11,6 +11,9 @@
   margin-left: auto;
   height: 10px;
 }
+
+/* msg css */
+
 .msg-window {
   font-family: Roboto, sans-serif;
   width: 350px;
@@ -99,4 +102,16 @@
 .msg-third-end {
   margin-top: -13px;
   border-top-left-radius: 0;
+}
+
+/* lockscreen css */
+
+.lockscreen {
+  font-family: Roboto, sans-serif;
+  width: 350px;
+  min-height: 600px;
+  background-color: #1a1c22;
+  color: white;
+  padding-bottom: 10px;
+  position: relative;
 }
