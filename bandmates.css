@@ -17,6 +17,8 @@
 
 /* msg css */
 
+/* ui */
+
 .msg-window {
   font-family: Roboto, sans-serif;
   margin-top: 10px;
@@ -95,6 +97,9 @@
   align-content: center;
   max-height: 30px;
 }
+
+/* messages */
+
 .msg-third {
   width: fit-content;
   border-radius: 1em;
