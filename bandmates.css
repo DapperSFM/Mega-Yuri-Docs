@@ -1,3 +1,4 @@
+/* universal ui */
 .screen-top {
   background-color: #1c1e24;
   height: 15px;
@@ -16,9 +17,7 @@
 }
 
 /* msg css */
-
 /* ui */
-
 .msg-window {
   font-family: Roboto, sans-serif;
   margin-top: 10px;
@@ -99,7 +98,6 @@
 }
 
 /* messages */
-
 .msg-third {
   width: fit-content;
   border-radius: 1em;
@@ -147,14 +145,35 @@
   border-top-left-radius: 0;
 }
 
-/* lockscreen css */
-
+/* lockscreen */
 .lockscreen {
   font-family: Roboto, sans-serif;
+  margin-top: 10px;
   width: 350px;
-  min-height: 600px;
-  background-color: #1a1c22;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-image: url(/bgs/jen-bg.png);
+  background-size: cover; 
+  background-position: center;
   color: white;
-  padding-bottom: 10px;
   position: relative;
+}
+/* notifs */
+.notification {
+  width: 90%;
+  max-height: 200px; 
+  align-content: left;
+  padding-left: 10px;
+  margin-left: 5%;
+  border-radius: 1em;
+  background-color: rgba(241, 231, 241, 0.8);
+  color: black;
+  font-size: 85%;
+  padding: 10px 10px 2px 10px;
+}
+.notification-content {
+  font-size: 80%;
+  color: #221a22;
+  margin-bottom: -2px;
 }
