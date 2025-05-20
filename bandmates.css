@@ -1,3 +1,6 @@
+body {
+  padding: 1% 20%;
+}
 /* universal ui */
 .screen-top {
   background-color: #1c1e24;
@@ -16,11 +19,16 @@
   position: inherit;
 }
 
+/* character text */
+.mei-text {
+  color: rgb(148, 0, 0);
+}
+
 /* msg css */
 /* ui */
 .msg-window {
   font-family: Roboto, sans-serif;
-  margin-top: 10px;
+  margin: 10px 0;
   width: 350px;
   height: 600px;
   overflow-y: auto;
@@ -146,9 +154,9 @@
 }
 
 /* lockscreen */
-.lockscreen {
+.lockscreen-jen {
   font-family: Roboto, sans-serif;
-  margin-top: 10px;
+  margin: 10px 0;
   width: 350px;
   height: 600px;
   overflow-y: auto;
@@ -158,6 +166,13 @@
   background-position: center;
   color: white;
   position: relative;
+}
+.clock {
+  height: 200px;
+  margin-left: 95px;
+  margin-top: 10px;
+  padding-bottom: 1em;
+  border-radius: 1em;
 }
 /* notifs */
 .notification {
@@ -182,11 +197,4 @@
   height: 1.5em;
   padding-right: 5px;
   width: auto;
-}
-.clock {
-  height: 200px;
-  margin-left: 95px;
-  margin-top: 10px;
-  padding-bottom: 1em;
-  border-radius: 1em;
 }
