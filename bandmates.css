@@ -1,5 +1,5 @@
 body {
-  padding: 1% 20%;
+  padding: 1% 5%;
 }
 /* universal ui */
 .screen-top {
@@ -12,11 +12,15 @@ body {
   position: sticky;
   top: 0;
 }
+.top-text {
+  margin-top: 0;
+}
 .top-icons {
   margin-right: 2px;
   margin-left: auto;
   height: 10px;
   position: inherit;
+  margin-top: 1px;
 }
 
 /* character text */
@@ -36,6 +40,10 @@ body {
   background-color: #1a1c22;
   color: white;
   position: relative;
+  scrollbar-width: thin;
+}
+.can-scroll {
+  width: 360px;
 }
 .header-msg {
   background-color: #252830;
@@ -46,7 +54,8 @@ body {
   position: sticky;
   top: 15px;
   overflow-x: inherit;
- scrollbar-gutter: inherit;
+  scrollbar-gutter: inherit;
+  margin-bottom: 1rem;
 }
 .msg-header-content {
   margin-bottom: 10px;
@@ -55,10 +64,10 @@ body {
 }
 .msg-header-text {
   margin-bottom: 10px;
+  margin-top: 0;
   align-content: center;
   width: 100%;
   text-align: center;
-  font-size: 10px;
 }
 .msg-footer {
   background-color: #252830;
@@ -67,9 +76,8 @@ body {
   align-content: center;
   display: flex;
   justify-content: space-around;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
+  padding: 0 10px;
+  width: calc(94% + 1px);
   overflow-x: inherit;
   position: absolute;
   bottom: 0;
@@ -81,12 +89,11 @@ body {
   align-content: center;
   display: flex;
   justify-content: space-around;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
+  padding: 0 10px;
+  width: calc(94% + 1px);
+  overflow-x: inherit;
   position: sticky;
   bottom: 0;
-  overflow-x: inherit;
 }
 .msg-footer-text {
   margin-top: 10px;
@@ -110,22 +117,18 @@ body {
   width: fit-content;
   border-radius: 1em;
   background-color: #3f434d;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: .4em;
-  padding-bottom: .4em;
+  padding: .4em 1em;
   margin-left: .5em;
+  max-width: 250px;
 }
 .msg-first {
   width: fit-content;
   border-radius: 1em;
   background-color: #103a96;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: .4em;
-  padding-bottom: .4em;
+  padding: .4em 1em;
   margin-right: .5em;
   margin-left: auto;
+  max-width: 250px;
 }
 .msg-first-begin {
   border-bottom-right-radius: 0;
@@ -168,7 +171,7 @@ body {
 }
 .clock {
   height: 200px;
-  margin-left: 95px;
+  margin-left: 90px;
   margin-top: 10px;
   padding-bottom: 1em;
   border-radius: 1em;
@@ -178,14 +181,14 @@ body {
   width: 90%;
   max-height: 200px;
   align-content: left;
-  padding-left: 10px;
-  margin-left: 5%;
+  margin: 0 auto;
   border-radius: 1em;
   background-color: rgba(241, 231, 241, 0.8);
   color: black;
   font-size: 85%;
   padding: 10px;
   overflow-y: auto;
+  max-width: 300px;
 }
 .notification-content {
   font-size: 90%;
